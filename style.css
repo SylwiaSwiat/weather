@@ -61,8 +61,9 @@ button:hover {
     border: none;
     border-radius: 25px;
     background: transparent;
-backdrop-filter: blur(3px);
-box-shadow: #333 0px 0px 24px -8px;
+    background-color: #0085a394;
+    backdrop-filter: blur(3px);
+    box-shadow: #333 0px 0px 24px -8px;
 }
 
 .top {
@@ -118,4 +119,39 @@ box-shadow: #333 0px 0px 24px -8px;
     margin-top: 10px;
     font-size: 14px;
     color: tomato;
+}
+
+@media all and (max-width:768px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .city-name {
+        margin: 10px;
+    }
+
+    input {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .warning {
+        margin: 5px;
+    }
+
+    .main-info {
+        margin: 0 10px;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .headings p,
+    .weather-info p {
+        font-size: 14px;
+        margin: 5px;
+    }
 }
